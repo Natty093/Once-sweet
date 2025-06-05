@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Página de compra para Once&Sweet">
+    <meta name="keywords" content="postres, compra, cupcakes, pasteles, galletas, brownies">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos.css">
+    <title>Compra - Once&Sweet</title>
+</head>
+<body>
+    <nav>
+        <a href="index.html" class="logo">Once&Sweet</a>
+        <div class="links">
+            <a href="index.html">Inicio</a>
+            <a href="destacados.html">Destacados</a>
+            <a href="tienda.html">Tienda</a>
+            <a href="blog.html">Blog</a>
+            <a href="contacto.html">Contacto</a>
+        </div>
+        <div class="login">
+            <a href="registro.html" class="signup">Registro</a>
+            <a href="iniciar-sesion.html">Iniciar Sesión</a>
+        </div>
+    </nav>
+
+    <section class="checkout-section">
+        <h1 class="separator">Finalizar Compra</h1>
+        
+        <div class="checkout-container">
+            <div class="product-summary">
+                <h2>Resumen del Pedido</h2>
+                <div class="product-item">
+                    <img src="imagenes/Cupcake Os.jpg" alt="Cupcakes" width="120" height="120">
+                    <div class="product-info">
+                        <h3>Cupcakes</h3>
+                        <p>Cantidad: 1</p>
+                        <p>Precio unitario: $80.00 MXN</p>
+                        <p class="product-total">Subtotal: $80.00 MXN</p>
+                    </div>
+                </div>
+                <div class="order-total">
+                    <p>Total: <span>$80.00 MXN</span></p>
+                </div>
+            </div>
+
+            <div class="checkout-form">
+                <form action="confirmacion.html" method="post" novalidate>
+                    <fieldset>
+                        <legend><h2>Información Personal</h2></legend>
+                        
+                        <div class="form-group">
+                            <label for="nombre">Nombre completo *</label>
+                            <input type="text" id="nombre" name="nombre" required 
+                                   placeholder="Ej. Juan Pérez López" 
+                                   pattern="[A-Za-záéíóúÁÉÍÓÚñÑ\s]{3,}">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="email">Correo electrónico *</label>
+                            <input type="email" id="email" name="email" required 
+                                   placeholder="ejemplo@correo.com">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="telefono">Teléfono *</label>
+                            <input type="tel" id="telefono" name="telefono" required 
+                                   placeholder="10 dígitos" 
+                                   pattern="[0-9]{10}">
+                        </div>
+                    </fieldset>
+
+                    <fieldset>
+                        <legend><h2>Dirección de Envío</h2></legend>
+                        
+                        <div class="form-group">
+                            <label for="direccion">Dirección completa *</label>
+                            <textarea id="direccion" name="direccion" required 
+                                      placeholder="Calle, número, colonia, referencia"></textarea>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="ciudad">Ciudad *</label>
+                            <input type="text" id="ciudad" name="ciudad" required 
+                                   placeholder="Ej. Ciudad de México">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="cp">Código Postal *</label>
+                            <input type="text" id="cp" name="cp" required 
+                                   placeholder="5 dígitos" 
+                                   pattern="[0-9]{5}">
+                        </div>
+                    </fieldset>
+
+                    <fieldset class="payment-methods">
+                        <legend><h2>Método de Pago</h2></legend>
+                        
+                        <div class="form-group radio-group">
+                            <input type="radio" id="efectivo" name="metodo-pago" value="efectivo" checked>
+                            <label for="efectivo">Efectivo al recibir</label>
+                        </div>
+                        
+                        <div class="form-group radio-group">
+                            <input type="radio" id="transferencia" name="metodo-pago" value="transferencia">
+                            <label for="transferencia">Transferencia bancaria</label>
+                            <div class="payment-details" id="transferencia-details">
+                                <p>Realiza tu transferencia a:</p>
+                                <p><strong>Banco:</strong> BBVA</p>
+                                <p><strong>Cuenta:</strong> 4152 3134 5678 9012</p>
+                                <p><strong>CLABE:</strong> 012 180 00415231345678</p>
+                                <p><strong>Titular:</strong> Once & Sweet S.A. de C.V.</p>
+                                <p>Envía el comprobante a contacto@oncesweet.com</p>
+                            </div>
+                        </div>
+                        
+                        <div class="form-group radio-group">
+                            <input type="radio" id="tarjeta" name="metodo-pago" value="tarjeta">
+                            <label for="tarjeta">Tarjeta de crédito/débito</label>
+                            <div class="payment-details" id="tarjeta-details">
+                                <div class="form-group">
+                                    <label for="tarjeta-numero">Número de tarjeta</label>
+                                    <input type="text" id="tarjeta-numero" name="tarjeta-numero" 
+                                           placeholder="1234 5678 9012 3456" 
+                                           pattern="[0-9\s]{16,19}">
+                                </div>
+                                <div class="form-group">
+                                    <label for="tarjeta-nombre">Nombre en la tarjeta</label>
+                                    <input type="text" id="tarjeta-nombre" name="tarjeta-nombre">
+                                </div>
+                                <div class="card-details">
+                                    <div class="form-group">
+                                        <label for="tarjeta-fecha">Fecha de expiración</label>
+                                        <input type="month" id="tarjeta-fecha" name="tarjeta-fecha">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="tarjeta-cvv">CVV</label>
+                                        <input type="text" id="tarjeta-cvv" name="tarjeta-cvv" 
+                                               placeholder="123" 
+                                               pattern="[0-9]{3,4}">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </fieldset>
+
+                    <div class="form-group">
+                        <label for="notas">Notas adicionales (opcional)</label>
+                        <textarea id="notas" name="notas" 
+                                  placeholder="Indica aquí cualquier detalle adicional sobre tu pedido"></textarea>
+                    </div>
+                    
+                    <div class="form-group terms">
+                        <input type="checkbox" id="terminos" name="terminos" required>
+                        <label for="terminos">Acepto los <a href="Privacidad.html">términos y condiciones</a> y <a href="Privacidad.html">políticas de privacidad</a> *</label>
+                    </div>
+                    
+                    <button type="submit" class="submit-btn">Confirmar Compra</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-left">
+            <h3>Once&Sweet: postres únicos y<br> a tu medida.</h3>
+            <p class="copyright">Copyright © Once&Sweet 2025 | Mariana Hilario</p>
+        </div>
+        <div class="right">
+            <div class="links">
+                <a href="Privacidad.html">Politicas de Privacidad</a>
+                <a href="politicasDevolucion.html">Politicas de Devolución</a>
+                <a href="contacto.html">Contacto</a>
+            </div> 
+            <div class="social">
+                <i class='bx bxl-instagram'></i>
+                <i class='bx bxl-tiktok'></i>
+                <i class='bx bxl-youtube'></i>
+                <i class='bx bxl-twitch'></i>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

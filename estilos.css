@@ -1,0 +1,1132 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Tilt+Warp&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+img {
+    object-fit: cover;
+}
+
+body {
+    background-color: #FFFCF5;
+}
+
+nav {
+    padding: 0 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 80px;
+}
+
+nav a.logo {
+    font-size: 33px;
+    color: #633c3a;
+    font-weight: 600;
+}
+
+nav .links a:not(:last-child) {
+    margin-right: 20px;
+}
+
+nav .login a {
+    padding: 8px 14px;
+    background-color: #dfdcdc;
+    border-radius: 4px;
+    margin-left: 14px;
+}
+
+nav .login a.signup {
+    background-color: #000;
+    color: #FFF;
+}
+
+nav .login a:hover {
+    background-color: #633c3a;
+    color: #FFFCF5;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 80px;
+    min-height: 350px;
+}
+
+header .logo-header {
+    width: 350px;
+    height: 350px;
+    margin-left: 40px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+header .left {
+    width: 700px;
+}
+
+header .left h1 {
+    font-size: 80px;
+    font-family: "Tilt Warp", system-ui;
+}
+
+header .left h1 span {
+    color: #633c3a;
+}
+.right h1 {
+    text-align: left;
+    font-size: 40px;
+    margin-left: 20px;
+}
+.right p {
+    text-align: left;
+    font-size: 20px;
+    margin-left: 20px;
+}
+header .left p {
+    margin: 40px 0;
+    color: #000;
+}
+
+header .left a {
+    display: flex;
+    align-items: center;
+    background: #000;
+    width: 200px;
+    padding: 8px;
+    border-radius: 60px;
+}
+
+header .left a i {
+    background-color: #FFF;
+    font-size: 24px;
+    border-radius: 50px;
+    padding: 8px;
+}
+
+header .left a span {
+    color: #FFFCF5;
+    margin-left: 10px;
+}
+
+header img {
+    width: 1100px;
+}
+
+h2.separator {
+    padding: 0 80px;
+    font-size: 40px;
+    margin-top: 40px;
+}
+
+.sell-nft {
+    padding: 0 80px;
+    margin: 50px 0 80px;
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.sell-nft .item,
+.nft-shop .nft-list .item {
+    padding: 20px;
+    border-radius: 18px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease;
+}
+
+.sell-nft .item:hover,
+.nft-shop .nft-list .item:hover,
+.sellers .item:hover {
+    box-shadow: none;
+}
+
+.sell-nft .item .header,
+.nft-shop .nft-list .item .header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.sell-nft .item .header i {
+    font-size: 40px;
+}
+
+.sell-nft .item .header h5 {
+    font-size: 15px;
+}
+
+.sell-nft .item p {
+    margin-top: 10px;
+    padding: 0 4px;
+}
+
+.nft-shop {
+    text-align: left;
+    padding-left: 40px;
+}
+
+.nft-shop .category {
+    display: flex;
+    gap: 14px;
+}
+
+.nft-shop .category a {
+    background-color: #dfdcdc;
+    padding: 8px 14px;
+    font-size: 15px;
+    border-radius: 14px;
+    transition: background 0.3s, color 0.3s;
+}
+
+.nft-shop .category a:hover {
+    color: #FFFCF5;
+    background-color: #633c3a;
+}
+
+.nft-shop .nft-list {
+    padding: 40px 0;
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.nft-shop .nft-list .item {
+    width: 30%;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: #fff;
+}
+
+.nft-shop .nft-list .item img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 18px 18px 0 0;
+}
+
+.nft-shop .nft-list .item h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.nft-shop .nft-list .item .date {
+    font-size: 14px;
+    color: #633c3a;
+    margin-bottom: 10px;
+}
+
+.nft-shop .nft-list .item p {
+    font-size: 14px;
+    margin-bottom: 10px;
+    flex-grow: 1;
+}
+
+.nft-shop .nft-list .item .bid {
+    padding: 14px 0 4px;
+    display: flex;
+    justify-content: center;
+}
+
+.nft-shop .nft-list .item .bid a {
+    background-color: #dfdcdc;
+    padding: 6px 10px;
+    font-size: 13px;
+    border-radius: 10px;
+    color: #633c3a;
+    font-weight: bold;
+    transition: background 0.3s, color 0.3s;
+}
+
+.nft-shop .nft-list .item .bid a:hover {
+    color: #edecec;
+    background-color: #000;
+}
+
+.view-more {
+    margin: 10px 0 40px;
+    display: flex;
+    justify-content: center;
+}
+
+.view-more button,
+.view-more-btn {
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    background: #dfdcdc;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background 0.3s, color 0.3s;
+    color: #633c3a;
+    font-weight: bold;
+    text-align: center;
+}
+
+.view-more button:hover,
+.view-more-btn:hover {
+    background-color: #633c3a;
+    color: #fff;
+}
+
+/* Sección sellers (manteniendo la primera regla igual) */
+.sellers {
+    padding: 0 80px;
+    margin: 40px 0 80px;
+    display: flex;
+    gap: 30px;
+}
+
+.sellers .item {
+    background-color: #FFFCF5;
+    display: flex;
+    align-items: center;
+    width: 25%;
+    gap: 14px;
+    padding: 14px;
+    border-radius: 18px;
+    cursor: pointer;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease;
+}
+
+.sellers .item img {
+    width: 64px;
+    height: 64px;
+    object-fit: cover;
+    border-radius: 8px;
+    display: block;
+}
+
+.sellers .item .info p {
+    font-size: 14px;
+    margin-top: 8px;
+    color: #633c3a;
+}
+
+footer {
+    background-color: #633c3a;
+    color: #dfdcdc;
+    padding: 100px 80px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.footer-left {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+footer h3 {
+    font-size: 48px;
+}
+
+footer .right {
+    width: 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 26px;
+}
+
+footer .right .links {
+    display: flex;
+    gap: 30px;
+}
+
+footer .right .links a {
+    color: #f1e9de;
+    transition: color 0.3s ease;
+}
+
+footer .right .links a:hover {
+    color: #fff;
+}
+
+footer .right .social {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+footer .right .social a {
+    font-size: 16px;
+    color: #f1e9de;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+footer .right .social a:hover {
+    color: #cd606b;
+}
+
+footer .right p {
+    font-size: 13px;
+    color: #f1e9de;
+}
+
+footer .copyright {
+    font-size: 14px;
+    color: #f1e9de;
+    margin-top: 10px;
+    margin-bottom: 0;
+}
+
+.post-content {
+    padding: 40px 80px;
+    margin-bottom: 40px;
+}
+
+.post-content a.back {
+    display: inline-block;
+    margin-bottom: 10px;
+    margin-top: 30px;
+    background-color: #dfdcdc;
+    padding: 6px 10px;
+    border-radius: 10px;
+    color: #633c3a;
+    font-weight: bold;
+}
+
+.post-content a.back:hover {
+    background-color: #633c3a;
+    color: #FFFCF5;
+}
+
+.post-content h2 {
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+
+.post-content .date {
+    font-size: 14px;
+    color: #633c3a;
+    margin-bottom: 20px;
+}
+
+.post-content p {
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+.contact-form,
+.register-form,
+.login-form {
+    padding: 40px 80px;
+    max-width: 600px;
+    margin: 0 auto 60px auto;
+}
+
+.contact-form {
+    max-width: 600px;
+    margin: 0;
+    padding-left: 0;
+    padding-right: 0;
+    text-align: left;
+}
+
+.contact-form p,
+.register-form p,
+.login-form p {
+    font-size: 16px;
+    margin-bottom: 50px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group label {
+    font-size: 14px;
+    font-weight: 500;
+    color: #633c3a;
+    margin-bottom: 8px;
+}
+
+.form-group input,
+.form-group textarea {
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #dfdcdc;
+    border-radius: 8px;
+    background-color: #FFFCF5;
+    transition: border-color 0.3s ease;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    outline: none;
+    border-color: #633c3a;
+}
+
+.form-group textarea {
+    resize: vertical;
+    min-height: 100px;
+}
+
+form button {
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    background: #dfdcdc;
+    border-radius: 10px;
+    cursor: pointer;
+    color: #633c3a;
+    font-weight: bold;
+    transition: background 0.3s, color 0.3s;
+    align-self: flex-start;
+}
+
+form button:hover {
+    background-color: #633c3a;
+    color: #FFFCF5;
+}
+
+.register-link {
+    font-size: 14px;
+    margin-top: 10px;
+    text-align: center;
+}
+
+.register-link a {
+    color: #633c3a;
+    font-weight: 500;
+}
+
+.register-link a:hover {
+    color: #000;
+}
+
+.register-form {
+    margin-bottom: 60px;
+}
+.register-form .separator,
+.login-form .separator {
+    padding-left: 0;
+    padding-right: 0;
+}
+.login-form {
+    margin-bottom: 60px;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 1400px) {
+    nav,
+    header,
+    h2.separator,
+    .sell-nft,
+    .nft-shop,
+    .sellers,
+    .post-content,
+    .contact-form,
+    .register-form,
+    .login-form {
+        padding: 0 40px;
+    }
+    header .left h1 {
+        font-size: 60px;
+    }
+    header img {
+        width: 540px;
+    }
+    footer {
+        padding: 100px 40px;
+    }
+    footer h3 {
+        font-size: 38px;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    header .left h1 {
+        font-size: 48px;
+    }
+    header img {
+        width: 480px;
+    }
+    h2.separator {
+        font-size: 34px;
+    }
+    .sell-nft .item .header {
+        font-size: 36px;
+    }
+    .sell-nft .item .header h5 {
+        font-size: 15px;
+    }
+    .sell-nft .item p {
+        font-size: 13px;
+    }
+    .nft-shop .nft-list {
+        flex-wrap: wrap;
+        row-gap: 30px;
+    }
+    .nft-shop .nft-list .item {
+        width: 48%;
+        height: 380px;
+    }
+    .sellers {
+        flex-wrap: wrap;
+    }
+    .sellers .item {
+        width: 48%;
+    }
+    footer .links a {
+        font-size: 15px;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    nav a.logo {
+        font-size: 28px;
+    }
+    nav .links a {
+        font-size: 14px;
+    }
+    header {
+        flex-direction: column-reverse;
+        height: auto;
+        margin-bottom: 60px;
+    }
+    header .left {
+        width: 100%;
+    }
+    header img {
+        width: 100%;
+    }
+    .sell-nft {
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+    .sell-nft .item {
+        width: 48%;
+    }
+    .sellers {
+        gap: 20px;
+    }
+    footer {
+        flex-direction: column;
+        padding: 60px 40px;
+    }
+    footer h3 {
+        margin-bottom: 40px;
+        font-size: 32px;
+    }
+    footer .right {
+        width: 100%;
+        align-items: center;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    nav,
+    header,
+    h2.separator,
+    .sell-nft,
+    .nft-shop,
+    .sellers,
+    .post-content,
+    .contact-form,
+    .register-form,
+    .login-form {
+        padding: 0 20px;
+    }
+    nav a.logo {
+        display: none;
+    }
+    nav .links a {
+        font-size: 12px;
+    }
+    nav .login a {
+        font-size: 12px;
+        padding: 6px 10px;
+    }
+    header .left h1 {
+        font-size: 36px;
+    }
+    header .left p {
+        font-size: 14px;
+    }
+    header .left a {
+        padding: 6px;
+        width: 160px;
+        font-size: 14px;
+    }
+    header .left a i {
+        padding: 6px;
+    }
+    h2.separator {
+        font-size: 30px;
+    }
+    footer {
+        padding: 40px 20px;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    header .left h1 {
+        font-size: 30px;
+    }
+    .sell-nft .item,
+    .nft-shop .nft-list .item,
+    .sellers .item {
+        width: 100%;
+    }
+    .nft-shop .category a {
+        font-size: 13px;
+    }
+}
+
+/* Filtros y radio buttons */
+input[type="radio"] {
+    display: none;
+}
+
+.item {
+    display: block;
+}
+
+/* Ocultar todos los items cuando se selecciona una categoría */
+#cupcakes:checked ~ .nft-shop .nft-list .item:not(.cupcakes),
+#pasteles:checked ~ .nft-shop .nft-list .item:not(.pasteles),
+#galletas:checked ~ .nft-shop .nft-list .item:not(.galletas),
+#brownies:checked ~ .nft-shop .nft-list .item:not(.brownies),
+#personalizado:checked ~ .nft-shop .nft-list .item:not(.personalizado) {
+    display: none;
+}
+
+label.categoria {
+    cursor: pointer;
+    background: #633c3a;
+    color: white;
+    padding: 8px 16px;
+    margin: 5px;
+    border-radius: 5px;
+    display: inline-block;
+}
+
+/* Pago tarjeta y campos dinámicos */
+#pago-tarjeta:checked ~ .tarjeta-fields {
+    display: block;
+}
+.tarjeta-fields {
+    display: none;
+}
+.form-group.radio-group {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+}
+.form-group.radio-group label {
+    font-weight: normal;
+}
+
+/* ESTILOS GENERALES PARA LA PÁGINA DE COMPRA */
+.checkout-section {
+    padding: 0 80px;
+    margin-bottom: 60px;
+    background-color: #FFFCF5;
+}
+
+.checkout-section h1.separator {
+    font-size: 40px;
+    margin: 30px 0;
+    color: #633c3a;
+    font-family: "Tilt Warp", system-ui;
+    text-align: center;
+}
+
+.checkout-container {
+    display: flex;
+    gap: 40px;
+    margin-top: 30px;
+}
+
+/* RESUMEN DEL PRODUCTO */
+.product-summary {
+    flex: 1;
+    padding: 30px;
+    background-color: #fff;
+    border-radius: 18px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    height: fit-content;
+    position: sticky;
+    top: 20px;
+}
+
+.product-summary h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #633c3a;
+    border-bottom: 2px solid #dfdcdc;
+    padding-bottom: 10px;
+}
+
+.product-item {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 30px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #dfdcdc;
+}
+
+.product-item img {
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 10px;
+    align-self: flex-start;
+}
+
+.product-info h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.product-info p {
+    font-size: 14px;
+    margin-bottom: 5px;
+    color: #555;
+}
+
+.product-total {
+    font-weight: bold;
+    color: #633c3a;
+    margin-top: 10px !important;
+}
+
+.order-total {
+    text-align: right;
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 20px;
+    color: #333;
+}
+
+.order-total span {
+    color: #633c3a;
+    font-size: 22px;
+}
+
+/* FORMULARIO DE COMPRA */
+.checkout-form {
+    flex: 2;
+    padding: 30px;
+    background-color: #fff;
+    border-radius: 18px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.checkout-form h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #633c3a;
+    border-bottom: 2px solid #dfdcdc;
+    padding-bottom: 10px;
+}
+
+.checkout-form fieldset {
+    border: none;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 30px;
+}
+
+.checkout-form legend {
+    font-size: 20px;
+    font-weight: bold;
+    color: #633c3a;
+    margin-bottom: 15px;
+    width: 100%;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #dfdcdc;
+}
+
+/* ESTILOS PARA FORMULARIOS */
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    font-size: 14px;
+    font-weight: 500;
+    color: #633c3a;
+    margin-bottom: 8px;
+}
+
+.form-group label[required]::after {
+    content: " *";
+    color: #e74c3c;
+}
+
+.form-group input,
+.form-group textarea,
+.form-group select {
+    width: 100%;
+    padding: 12px;
+    font-size: 14px;
+    border: 1px solid #dfdcdc;
+    border-radius: 8px;
+    background-color: #FFFCF5;
+    transition: border-color 0.3s ease;
+    font-family: "Poppins", sans-serif;
+}
+
+.form-group input:focus,
+.form-group textarea:focus,
+.form-group select:focus {
+    outline: none;
+    border-color: #633c3a;
+    box-shadow: 0 0 0 2px rgba(99, 60, 58, 0.2);
+}
+
+.form-group textarea {
+    resize: vertical;
+    min-height: 100px;
+}
+
+/* ESTILOS PARA MÉTODOS DE PAGO */
+.payment-methods .form-group.radio-group {
+    margin-bottom: 15px;
+    padding: 15px;
+    border: 1px solid #dfdcdc;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+    position: relative;
+}
+
+.payment-methods .form-group.radio-group:hover {
+    border-color: #633c3a;
+}
+
+.payment-methods input[type="radio"] {
+    position: absolute;
+    opacity: 0;
+}
+
+.payment-methods input[type="radio"] + label {
+    position: relative;
+    padding-left: 30px;
+    cursor: pointer;
+    display: inline-block;
+    color: #333;
+    font-weight: 500;
+}
+
+.payment-methods input[type="radio"] + label:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 20px;
+    height: 20px;
+    border: 2px solid #633c3a;
+    border-radius: 50%;
+    background: #fff;
+}
+
+.payment-methods input[type="radio"]:checked + label:before {
+    background: #633c3a;
+    box-shadow: inset 0 0 0 3px #fff;
+}
+
+.payment-methods input[type="radio"]:checked + label {
+    color: #633c3a;
+    font-weight: bold;
+}
+
+.payment-details {
+    display: none;
+    margin-top: 15px;
+    padding: 15px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    border-left: 3px solid #633c3a;
+}
+
+/* Mostrar detalles del método de pago seleccionado */
+#transferencia:checked ~ #transferencia-details,
+#tarjeta:checked ~ #tarjeta-details {
+    display: block;
+    animation: fadeIn 0.3s ease;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* Estilos específicos para transferencia bancaria */
+#transferencia-details p {
+    margin-bottom: 8px;
+    font-size: 14px;
+    color: #555;
+}
+
+#transferencia-details strong {
+    color: #633c3a;
+}
+
+/* Estilos específicos para tarjeta */
+.card-details {
+    display: flex;
+    gap: 15px;
+}
+
+.card-details .form-group {
+    flex: 1;
+}
+
+#tarjeta-numero,
+#tarjeta-nombre,
+#tarjeta-fecha,
+#tarjeta-cvv {
+    background-color: #fff;
+    border: 1px solid #dfdcdc;
+    padding: 10px;
+    border-radius: 5px;
+    width: 100%;
+}
+
+/* Estilos para términos y condiciones */
+.terms {
+    margin: 20px 0;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+}
+
+.terms input[type="checkbox"] {
+    margin-right: 10px;
+    width: auto;
+}
+
+.terms a {
+    color: #633c3a;
+    text-decoration: underline;
+    transition: color 0.3s;
+}
+
+.terms a:hover {
+    color: #4a2d2b;
+}
+
+/* Estilos para botón de confirmación */
+.submit-btn {
+    padding: 14px 24px;
+    font-size: 16px;
+    border: none;
+    background: #633c3a;
+    border-radius: 10px;
+    cursor: pointer;
+    color: #FFFCF5;
+    font-weight: bold;
+    transition: background 0.3s;
+    margin-top: 20px;
+    width: 100%;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.submit-btn:hover {
+    background-color: #4a2d2b;
+}
+
+/* ESTILOS RESPONSIVE */
+@media screen and (max-width: 1200px) {
+    .checkout-section {
+        padding: 0 60px;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .checkout-container {
+        flex-direction: column;
+    }
+    
+    .checkout-section {
+        padding: 0 40px;
+    }
+    
+    .product-summary {
+        position: static;
+        margin-bottom: 30px;
+    }
+    
+    .product-item {
+        flex-direction: row;
+    }
+    
+    .card-details {
+        flex-direction: row;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .checkout-section {
+        padding: 0 20px;
+    }
+    
+    .product-item {
+        flex-direction: column;
+    }
+    
+    .product-item img {
+        width: 100%;
+        height: auto;
+        max-height: 200px;
+    }
+    
+    .card-details {
+        flex-direction: column;
+        gap: 10px;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .checkout-section {
+        padding: 0 15px;
+    }
+    
+    .product-summary,
+    .checkout-form {
+        padding: 20px;
+    }
+    
+    .product-summary h2,
+    .checkout-form h2 {
+        font-size: 20px;
+    }
+    
+    .order-total span {
+        font-size: 20px;
+    }
+    
+    .checkout-form fieldset legend {
+        font-size: 18px;
+    }
+}
